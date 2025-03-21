@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>VEHICLE LICENSE PLATE RECOGNITION</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-host-cloud.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <!--
+
+    Host Cloud Template
+
+    https://templatemo.com/tm-541-host-cloud
+
+    -->
+</head>
+
+<body>
+
+<!-- ***** Preloader Start ***** -->
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!-- ***** Preloader End ***** -->
+
+<!-- Header -->
+<header class="">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="{{url_for('index')}}"><h4>VEHICLE LICENSE PLATE RECOGNITION</h4></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<!--            <div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--                <ul class="navbar-nav ml-auto">-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="view.html">VIEW-IMAGE-->
+<!--                            <span class="sr-only">(current)</span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link" href="viewuser.html">VIEW-USER-DETAILS</a>-->
+<!--                    </li>-->
+<!--                    &lt;!&ndash;          <li class="nav-item">&ndash;&gt;-->
+<!--                    &lt;!&ndash;            <a class="nav-link" href="services.html">Our Services</a>&ndash;&gt;-->
+<!--                    &lt;!&ndash;          </li>&ndash;&gt;-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="index.html">Logout</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+            <div class="functional-buttons">
+                <!--            <ul>-->
+                <!--              <li><a href="#">Log in</a></li>-->
+                <!--              <li><a href="#">Sign Up</a></li>-->
+                <!--            </ul>-->
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="page-heading header-text" style="
+    padding-top: 140px;
+    padding-bottom: 1px;
+">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="hs-text">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!--
+                                    <form action="{{ url_for('upload') }}" class="hero-form">
+                -->
+                <br>
+                <br>
+                <br>
+                <div class="login card" style="color: orangered;">
+                    <center>
+
+                        <br><br>
+                        <img src=" {{url_for('view1', filename=image_name)}}" style="width:300px;height:300px;">
+                        <br>
+
+                        <a style="text-decoration: none; display: block; margin: 20px auto;" class="btn btn-primary btn-block btn-large" href="{{ url_for('view') }}" role="button">View Another image</a>
+
+
+                    </center></div>
+                <!--
+                                    </form>
+                -->
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+
+    <div class="hero-slider owl-carousel">
+        <div class="hs-item set-bg" data-setbg="static/img/hero-slider/w2.jpg" style="background-image: url('img/hero-slider/w2.jpg');background-size: cover;"></div>
+
+        <!--<div class="hs-item set-bg" data-setbg="static/img/hero-slider/covid.jpg" style="background-image: url('img/hero-slider/covid.jpg');background-size: cover;"></div>
+
+
+        <div class="hs-item set-bg" data-setbg="static/img/hero-slider/c6.jpg" style="background-image: url('img/hero-slider/c6.jpg');background-size: cover;"></div>
+-->
+
+    </div>
+    </div>
+
+</section>
+
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Additional Scripts -->
+<script src="static/assets/js/custom.js"></script>
+<script src="static/assets/js/owl.js"></script>
+<script src="static/assets/js/accordions.js"></script>
+
+<script language = "text/Javascript">
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+</body>
+</html>
